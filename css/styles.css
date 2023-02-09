@@ -1,0 +1,47 @@
+body {
+  font-family: "Ubuntu";
+  text-align: center;
+}
+
+/* ------------------Sections------------------- */
+
+.colored-section-one {
+  background-color: #62b6b7;
+  padding: auto;
+}
+
+.colored-section-two {
+  background-color: #97dece;
+  padding: 20px auto 20px;
+}
+
+/* ------------------Navigation Bar------------- */
+
+.navbar-style {
+  background-color: #cbedd5;
+  color: black;
+}
+
+.navbar-border {
+  border-radius: 30px;
+}
+
+/* ------------------Title---------------------- */
+
+.title-image {
+  position: absolute;
+  right: 0.1rem;
+  width: 20%;
+}
+.title {
+  padding: 3% 15% 15%;
+}
+.row {
+  position: relative;
+  padding: 3% 15% 7%;
+}
+
+/* ------------------Footer---------------------- */
+
+.container-fluid {
+}
