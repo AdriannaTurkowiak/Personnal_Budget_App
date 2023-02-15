@@ -1,6 +1,5 @@
 body {
   font-family: "Ubuntu";
-  text-align: center;
 }
 
 /* ------------------Sections------------------- */
@@ -19,7 +18,7 @@ body {
 
 .navbar-style {
   background-color: #cbedd5;
-  color: black;
+  color: black !important;
 }
 
 .navbar-border {
@@ -31,21 +30,31 @@ body {
 .title-image {
   position: absolute;
   right: 0.1rem;
-  width: 20%;
+  width: 25%;
+  padding: 0;
 }
 .title {
-  padding: 3% 15% 15%;
+  padding: 3% 10% 7%;
+}
+.title-no-button {
+  padding: 3% 10% 15%;
 }
 .row {
   position: relative;
-  padding: 3% 15% 7%;
+  padding: 3% 3% 5%;
 }
 
-.cytat {
+/* ------------------Quote---------------------- */
+
+.quote {
   background-color: white;
-  padding: 7% 15% 7%;
+  padding: 3% 30% 7%;
   font-family: "Solitreo";
   font-size: 30px;
 }
 
 /* ------------------Footer---------------------- */
+
+.copyright {
+  text-align: center;
+}
