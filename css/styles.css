@@ -1,5 +1,6 @@
 body {
   font-family: "Ubuntu";
+  text-align: center;
 }
 
 /* ------------------Sections------------------- */
@@ -29,21 +30,30 @@ body {
 
 /* ------------------Title---------------------- */
 
+.row {
+  /* position: relative; */
+  /* padding: 3% 3% 5%; */
+}
+
+.image {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 .title-image {
-  position: absolute;
-  right: 0.1rem;
   width: 25%;
-  padding: 0;
+}
+
+.buttons {
+  text-align: center;
 }
 .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 3% 10% 7%;
 }
 .title-no-button {
   padding: 3% 10% 15%;
-}
-.row {
-  position: relative;
-  padding: 3% 3% 5%;
 }
 
 /* ------------------Quote---------------------- */
