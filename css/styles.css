@@ -14,13 +14,9 @@ hr {
 
 /* ------------------Sections------------------- */
 
-.colored-section-one {
+.colored-section {
   background-color: #62b6b7;
-}
-
-.colored-section-two {
-  background-color: #97dece;
-  padding: 20px auto 20px;
+  color: white;
 }
 
 /* ------------------Navigation Bar------------- */
@@ -49,6 +45,10 @@ hr {
 }
 .title-image {
   width: 35%;
+}
+
+.log-form {
+  padding: 3% 15% 3%;
 }
 
 .buttons {
