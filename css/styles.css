@@ -19,14 +19,15 @@ hr {
 }
 
 .colored-section-two {
-  background-color: #97dece;
+  background-color: #62b6b7;
+  color: white;
   padding: 20px auto 20px;
 }
 
 /* ------------------Navigation Bar------------- */
 
 .navbar-style {
-  background-color: #cbedd5;
+  background-color: #e0bcb7;
   color: black !important;
 }
 
