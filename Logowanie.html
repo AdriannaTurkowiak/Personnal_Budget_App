@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Dodaj wydatek</title>
+    <title>Logowanie</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -49,12 +49,12 @@
 
   <body>
     <main>
-    <section class="colored-section-one" id="title">
-      <div class="container-fluid">
+    <section class="colored-section" id="title">
 
-      <!-- Nav Bar -->
+    <!-- Nav Bar -->
+
       <nav class="navbar navbar-dark navbar-expand-lg navbar-border navbar-style">
-        <a class="navbar-brand navbar-style" href="">Personnal Budget</a>
+        <a class="navbar-brand navbar-style" href="">Budżet domowy</a>
         <button
             class="navbar-toggler"
             type="button"
@@ -71,62 +71,109 @@
             <li class="nav-item">
               <a class="nav-link navbar-style" href="index.html">Strona główna<span class="sr-only">(current)</span></a>
           </li>
+      
+          </li>
           <li class="nav-item">
-            <a class="nav-link navbar-style" href="Dodaj_przychod.html"
-              >Dodaj przychód</a
+            <a class="nav-link navbar-style" href="Logowanie.html"
+              > Logowanie</a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link navbar-style" href="Dodaj_wydatek.html"
-              >Dodaj wydatek</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link navbar-style" href="Przegladaj_bilans.html"
-              >Przeglądaj bilans</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link navbar-style" href="Ustawienia.html"
-              >Ustawienia</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link navbar-style" href="Wyloguj_sie.html"
-              >Wyloguj się</a
+            <a class="nav-link navbar-style" href="Rejestracja.html"
+              >Rejestracja</a
             >
           </li>
         </ul>
         </div>
       </nav>
 
+
       <!-- Title -->
 
-      <div class="title-no-button">
-        <div class="row">
-          <img
-            class="title-image container"
-            src="images/Title image.png"
-            alt="Title image"
-          />
-        </div>
+    <div class="container-fluid">
+      <div class="row ">
+        <div class="empty mb-4 col-lg-12"></div>
       </div>
-    </section>
-  </main>
-    <!-- Quote -->
+      
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="log-form col-lg-6">
+          <form>
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                </div>
+                <input for="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+          </div>
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+                </div>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Hasło">
+            </div>
+            
+            <button type="submit" class="btn btn-dark btn-lg signin-button">Zaloguj</button>
+          </form>
+    </div> 
+    <div class="image col-lg-6">
+      <img
+        class="title-image "
+        src="images/Title image.png"
+        alt="Title image"
+      />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="empty mb-4 col-lg-12"></div>
+  </div>
+    </div>
+      </section>
+</main>
+
 <aside>
-<div class="quote">
+  <div class="container-fluid">
+    <div class="row dotted">
+      <hr />
+    </div>
+  </div>
+</aside>
+
+<aside>
+  <!-- Quote -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="icon col-lg-4">
+        <img
+          class="quote-icon "
+          src="images/Budzet_ikona.png"
+          alt="Budget icon"
+        />
+      </div>
+<div class="quote col-lg-6">
         „Mało, często powtarzane, stanowi wiele. Strzeżcie się drobnych wydatków
         – dosyć jest dla wody małego otworu, by wielki zatopiła okręt” –
         Benjamin Franklin.
       </div>
-    </aside>
-     <!-- Footer -->
-
-     <footer class="colored-section-two" id="footer">
-      <div class="container-fluid">
-        <p class="copyright">© Copyright Adrianna Turkowiak</p>
+    </div>
+     </div>
+      </aside>
+      <aside>
+        <div class="container-fluid">
+          <div class="row dotted">
+            <hr />
+          </div>
+        </div>
+      </aside>
+  
+      <!-- Footer -->
+  
+      <footer class="colored-section" id="footer">
+        <div class="container-fluid">
+          <div class="d-flex justify-content-center">
+          <p class="copyright">© Copyright Adrianna Turkowiak</p>
+        </div>
       </div>
-    </footer>
-  </body>
-</html>
+      </footer>
+    </body>
+  </html>
+  
