@@ -3,6 +3,15 @@ body {
   text-align: center;
 }
 
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: #e0bcb7;
+  border-width: 10px;
+  width: 5%;
+  margin-top: 30px;
+}
+
 /* ------------------Sections------------------- */
 
 .colored-section-one {
@@ -30,39 +39,40 @@ body {
 
 /* ------------------Title---------------------- */
 
-.row {
-  /* position: relative; */
-  /* padding: 3% 3% 5%; */
+.empty {
+  height: 50px;
 }
 
 .image {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .title-image {
-  width: 25%;
+  width: 35%;
 }
 
 .buttons {
   text-align: center;
 }
-.title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 3% 10% 7%;
+
+.btn {
+  border-radius: 28px;
 }
-.title-no-button {
-  padding: 3% 10% 15%;
+
+.dotted {
+  height: 80px;
 }
 
 /* ------------------Quote---------------------- */
 
 .quote {
   background-color: white;
-  padding: 3% 30% 7%;
+  padding: 3% 3% 3%;
   font-family: "Solitreo";
-  font-size: 30px;
+  font-size: 25px;
+}
+.quote-icon {
+  width: 25%;
 }
 
 /* ------------------Footer---------------------- */
@@ -71,6 +81,19 @@ body {
   text-align: center;
 }
 
-/* Colors */
-https: //colorhunt.co/palette/4fdcb9e0bcb7fef3ffecea8b#justCreated
-;
+@media (max-width: 900px) {
+  .image {
+    padding-top: 50px;
+    padding-bottom: 15px;
+  }
+  .title-image {
+    width: 20%;
+  }
+  .quote {
+    font-size: 15px;
+    padding: 7% 3% 3%;
+  }
+  .quote-icon {
+    width: 15%;
+  }
+}
