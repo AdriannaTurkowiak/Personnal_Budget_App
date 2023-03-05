@@ -112,12 +112,15 @@ hr {
   text-align: center;
 }
 
+.balance-empty {
+  height: 15px;
+}
+
 /* ------------------Tables---------------------- */
 
 .table-balance {
   font-size: 25px;
-  color: #212529;
-  background-color: #c39a51;
+  background-color: #212529;
   font-family: "Solitreo";
   padding-top: 10px;
   border-radius: 28px;
