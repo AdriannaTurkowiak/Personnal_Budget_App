@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Logowanie</title>
+    <title>Dodaj przychód</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -53,39 +53,55 @@
 
     <!-- Nav Bar -->
 
-      <nav class="navbar navbar-dark navbar-expand-lg navbar-border navbar-style">
-        <a class="navbar-brand navbar-style" href="">Budżet domowy</a>
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+    <nav class="navbar navbar-dark navbar-expand-lg navbar-border navbar-style">
+      <a class="navbar-brand navbar-style" href="">Budżet domowy</a>
+      <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+        <span class="" role="button" ><i class="fa fa-bars" aria-hidden="true" style="color:black"></i></span>
+      </button>      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link navbar-style" href="Zalogowany.html">Strona główna<span class="sr-only">(current)</span></a>
+        </li>
+    
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbar-style" href="Dodaj_przychód.html"
+            > Dodaj przychód</a
           >
-          <span class="" role="button" ><i class="fa fa-bars" aria-hidden="true" style="color:black"></i></span>
-        </button>      
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link navbar-style" href="index.html">Strona główna<span class="sr-only">(current)</span></a>
-          </li>
-      
-          </li>
-          <li class="nav-item">
-            <a class="nav-link navbar-style" href="Logowanie.html"
-              > Logowanie</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link navbar-style" href="Rejestracja.html"
-              >Rejestracja</a
-            >
-          </li>
-        </ul>
-        </div>
-      </nav>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbar-style" href="Dodaj_wydatek.html"
+            >Dodaj wydatek</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbar-style" href="Przeglądaj_bilans.html"
+            >Przeglądaj bilans</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbar-style" href="Ustawienia.html"
+            >Ustawienia</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbar-style" href="index.html"
+            >Wyloguj się</a
+          >
+        </li>
+      </ul>
+      </div>
+    </nav>
+
 
 
       <!-- Title -->
@@ -97,25 +113,23 @@
       
       <div class="row d-flex justify-content-center align-items-center">
         <div class="log-form col-lg-6">
-
-
           <form>
             <div class="form-group row">
               <label for="inputAmount" class="col-sm-2 col-form-label">Kwota</label>
-              <div class="col-sm-10">
+              <div class="col-md-8 col-sm-10">
                 <input type="text" class="form-control" id="inputAmount" placeholder="Wpisz kwotę w PLN">
               </div>
             </div>
             <div class="form-group row">
               <label for="inputDate" class="col-sm-2 col-form-label">Data</label>
-              <div class="col-sm-10">
+              <div class="col-md-8 col-sm-10">
                 <input type="text" class="form-control" id="inputDate" placeholder="Wpisz datę w formacie DD/MM/RRRR">
               </div>
             </div>
             <fieldset class="form-group">
               <div class="row">
                 <legend class="col-form-label col-sm-2 pt-0">Kategoria przychodu</legend>
-                <div class="col-sm-10">
+                <div class="col-md-8 col-sm-10">
                   <div class="form-check">
                     <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
                     <label class="form-check-label" for="gridRadios1">
@@ -140,22 +154,25 @@
                      Inne przychody
                     </label>
                   </div>
-                  <div class="form-group row">
-              <div class="col-sm-10">
-              </div>
-            </div>   
-            <label for="validationTextarea">Komentarz (opcjonalnie)</label>
-              <textarea class="form-control is-invalid" id="validationTextarea" ></textarea>
+                </div>
+              </div>   
+            </fieldset>
+            <div class="form-group row">
+              <label for="validationTextarea" class="col-sm-2 col-form-label text-left">Komentarz (opcjonalnie)</label>
+              <div class="col-md-8 col-sm-10">
+                <textarea class="form-control is-invalid" id="validationTextarea"></textarea>
               </div>
             </div>
-                </fieldset>
-          
-            <div class="form-group row">
-              <div class="col-sm-10">
-                <button type="submit" class="btn btn-primary">Sign in</button>
-              </div>
+            <div class="row d-flex justify-content-center ">
+              <a href ="" role="button" class="btn btn-dark btn-lg signin-button income-btn">
+                <i class="fa-solid fa-plus"></i> Dodaj 
+              </a>
+              <a href ="" role="button" class="btn btn-outline-light btn-lg login-button income-btn">
+                <i class="fa-solid fa-minus"></i> Anuluj 
+              </a>
             </div>
           </form>
+          
 
 
     </div> 
