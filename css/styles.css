@@ -108,6 +108,64 @@ hr {
   margin-right: 15px;
 }
 
+.form-question {
+  font-size: 20px;
+}
+
+.balance-empty {
+  height: 15px;
+}
+
+/* ------------------Tables---------------------- */
+
+.table-balance {
+  font-size: 25px;
+  background-color: #212529;
+  font-family: "Solitreo";
+  padding-top: 10px;
+  border-radius: 28px;
+  width: 30%;
+}
+
+.table-title {
+  font-size: 25px;
+  border-radius: 28px;
+  height: 50px;
+}
+
+.table-income {
+  background-color: #4fdcb9;
+}
+
+.table-expense {
+  background-color: #e0bcb7;
+}
+
+.table-balance-total {
+  background-color: #212529;
+}
+.comment {
+  font-size: 20px;
+  background-color: #ecea8b;
+  color: #212529;
+  font-family: "Solitreo";
+  padding-top: 10px;
+  border-radius: 28px;
+  width: 30%;
+}
+
+/* ------------------Pie chart---------------------- */
+
+.piechart {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: block;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-image: conic-gradient(pink 70deg, lightblue 0 235deg, orange 0);
+}
+
 /* ------------------Media Query---------------------- */
 
 @media (max-width: 900px) {

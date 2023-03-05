@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Przeglądaj bilans</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Solitreo&family=Ubuntu:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Scripts-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+      integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <main>
+    <section class="colored-section" id="title">
+
+    <!-- Nav Bar -->
+
+    <nav class="navbar navbar-dark navbar-expand-lg navbar-border navbar-style">
+      <a class="navbar-brand navbar-style" href="">Budżet domowy</a>
+      <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+        <span class="" role="button" ><i class="fa fa-bars" aria-hidden="true" style="color:black"></i></span>
+      </button>      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link navbar-style" href="Zalogowany.html">Strona główna<span class="sr-only">(current)</span></a>
+        </li>
+    
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbar-style" href="Dodaj_przychód.html"
+            > Dodaj przychód</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbar-style" href="Dodaj_wydatek.html"
+            >Dodaj wydatek</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbar-style" href="Przeglądaj_bilans.html"
+            >Przeglądaj bilans</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbar-style" href="Ustawienia.html"
+            >Ustawienia</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navbar-style" href="index.html"
+            >Wyloguj się</a
+          >
+        </li>
+      </ul>
+      </div>
+    </nav>
+
+      <!-- Title -->
+
+    <div class="container-fluid">
+      <div class="row ">
+        <div class="empty mb-0 col-lg-12"></div>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div class="table-balance" >TUTAJ SPRAWDZISZ ZESTAWIENIE PRZYCHODÓW I WYDATKÓW</div>
+      </div>
+      <div class="row ">
+        <div class="empty mb-0 col-lg-12"></div>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-4 form-question" >Za jaki okres mam wyświetlić bilans?</div>
+      </div>
+      <div class="row ">
+        <div class="empty col-lg-12 balance-empty"></div>
+      </div>
+
+      <fieldset class="form-group">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-2">
+            <div class="form-check form-balance ">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+              <label class="form-check-label" for="gridRadios1">
+                Bieżący miesiąc
+              </label>
+            </div>
+            <div class="form-check form-balance">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+              <label class="form-check-label" for="gridRadios2">
+               Poprzedni miesiąc
+              </label>
+            </div>
+            <div class="form-check form-balance">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+              <label class="form-check-label" for="gridRadios3">
+            Bieżący rok             
+             </label>
+            </div>
+            <div class="form-check form-balance">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option4">
+              <label class="form-check-label" for="gridRadios4">
+               Wybierz zakres dat             
+               </label>
+            </div>
+            <div class="form-group row">
+              <label for="inputDate" class="col-sm-2 col-form-label ">Początek</label>
+              <div class="col-md-8 col-sm-10 ml-4">
+                <input type="text" class="form-control" id="inputDate" placeholder="rrrr-mm-dd">
+              </div>
+              <label for="inputDate" class="col-sm-2 col-form-label">Koniec</label>
+              <div class="col-md-8 col-sm-10 ml-4">
+                <input type="text" class="form-control" id="inputDate" placeholder="rrrr-mm-dd">
+              </div>
+          </div>
+        </div>   
+      </fieldset>
+      <div class="row ">
+        <div class="empty mb-0 col-lg-12"></div>
+      </div>
+
+      <div class="row d-flex justify-content-center align-items-center">
+      
+        <!-- Income Table  -->
+
+        <div class="log-form col-lg-6">
+          <table class="table">
+            <div class="row d-flex justify-content-center table-title table-income pt-2">PRZYCHODY</div>
+            <div class="row ">
+              <div class="empty mb-0 col-lg-12"></div>
+            </div>
+          <thead>
+            <tr>
+              <th scope="col">Lp</th>
+              <th scope="col">Kategoria</th>
+              <th scope="col">Kwota [PLN]</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Wynagrodzenie</td>
+              <td>...</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Odsetki bankowe</td>
+              <td>...</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Sprzedaż na Allegro</td>
+              <td>...</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Inne</td>
+              <td>...</td>
+            </tr>
+            <tr class="table-income">
+              <th scope="row"></th>
+              <td>SUMA</td>
+              <td>...</td>
+            </tr>
+          </tbody>
+        </table>
+        </div> 
+
+       <!-- Expense Table  -->
+
+       <div class="log-form col-lg-6">
+       <table class="table">
+        <div class="row d-flex justify-content-center table-title table-expense pt-2">WYDATKI</div>
+        <div class="row ">
+          <div class="empty mb-0 col-lg-12"></div>
+        </div>
+      <thead>
+        <tr>
+          <th scope="col">Lp</th>
+          <th scope="col">Kategoria</th>
+          <th scope="col">Kwota [PLN]</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Ubrania</td>
+          <td>...</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jedzenie</td>
+          <td>...</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Transport</td>
+          <td>...</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Inne</td>
+          <td>...</td>
+        </tr>
+        <tr class="table-expense">
+          <th scope="row"></th>
+          <td>SUMA</td>
+          <td>...</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+    </div>
+
+    <div class="row ">
+      <div class="empty mb-0 col-lg-12"></div>
+    </div>
+    <div class="log-form col-lg-6">
+    <table class="table">
+      <tbody>
+        <tr class="table-balance-total">
+          <th scope="row"></th>
+          <td>Bilans w wybranym okresie czasu wynosi: </td>
+          <td>...</td>
+        </tr>
+        </tbody>
+    </table>
+  </div>
+
+    <div class="row ">
+      <div class="empty col-lg-12"></div>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <div class="comment">
+        Uważaj, wpadasz w długi! / Gratulacje. Świetnie zarządzasz finansami!
+      </div>
+    </div>
+
+           <!-- Pie Chart  -->
+           <aside>
+            <div class="container-fluid">
+              <div class="row dotted">
+                <hr />
+              </div>
+            </div>
+          </aside>
+    <h1>Twoje wydatki z wybranego okresu</h1>
+    <div class="row d-flex justify-content-center">
+      <div class="piechart"></div>
+  </div>
+      </section>
+</main>
+
+  <!-- Quote -->
+
+<aside>
+  <div class="container-fluid">
+    <div class="row dotted">
+      <hr />
+    </div>
+  </div>
+</aside>
+
+<aside>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="icon col-lg-4">
+        <img
+          class="quote-icon "
+          src="images/Budzet_ikona.png"
+          alt="Budget icon"
+        />
+      </div>
+<div class="quote col-lg-6">
+  „Kto wydaje więcej niż zarabia, wpada w pułapkę niepotrzebnych zachcianek, z której szybko dostaje się na dno kłopotów i upokorzenia” – Robert Kiyosaki      </div>
+    </div>
+     </div>
+      </aside>
+      <aside>
+        <div class="container-fluid">
+          <div class="row dotted">
+            <hr />
+          </div>
+        </div>
+      </aside>
+  
+      <!-- Footer -->
+  
+      <footer class="colored-section" id="footer">
+        <div class="container-fluid">
+          <div class="d-flex justify-content-center">
+          <p class="copyright">© Copyright Adrianna Turkowiak</p>
+        </div>
+      </div>
+      </footer>
+    </body>
+  </html>
+  
