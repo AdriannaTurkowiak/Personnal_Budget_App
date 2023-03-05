@@ -102,8 +102,6 @@
       </div>
     </nav>
 
-
-
       <!-- Title -->
 
     <div class="container-fluid">
@@ -111,13 +109,13 @@
         <div class="empty mb-0 col-lg-12"></div>
       </div>
       <div class="row d-flex justify-content-center">
-        <div class="table-balance col-lg-4" >TUTAJ SPRAWDZISZ ZESTAWIENIE PRZYCHODÓW I WYDATKÓW</div>
+        <div class="table-balance" >TUTAJ SPRAWDZISZ ZESTAWIENIE PRZYCHODÓW I WYDATKÓW</div>
       </div>
       <div class="row ">
         <div class="empty mb-0 col-lg-12"></div>
       </div>
       <div class="row d-flex justify-content-center">
-        <div class="col-lg-4" >Za jaki okres mam wyświetlić bilans?</div>
+        <div class="col-lg-4 form-question" >Za jaki okres mam wyświetlić bilans?</div>
       </div>
       <div class="row ">
         <div class="empty col-lg-12 balance-empty"></div>
@@ -125,8 +123,8 @@
 
       <fieldset class="form-group">
         <div class="row d-flex justify-content-center">
-          <div class="col-lg-12 col-md-6 col-sm-10">
-            <div class="form-check form-balance">
+          <div class="col-lg-2">
+            <div class="form-check form-balance ">
               <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
               <label class="form-check-label" for="gridRadios1">
                 Bieżący miesiąc
@@ -141,13 +139,24 @@
             <div class="form-check form-balance">
               <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
               <label class="form-check-label" for="gridRadios3">
-Bieżący rok              </label>
+            Bieżący rok             
+             </label>
             </div>
             <div class="form-check form-balance">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-              <label class="form-check-label" for="gridRadios2">
-Niestandardowy              </label>
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option4">
+              <label class="form-check-label" for="gridRadios4">
+               Wybierz zakres dat             
+               </label>
             </div>
+            <div class="form-group row">
+              <label for="inputDate" class="col-sm-2 col-form-label ">Początek</label>
+              <div class="col-md-8 col-sm-10 ml-4">
+                <input type="text" class="form-control" id="inputDate" placeholder="rrrr-mm-dd">
+              </div>
+              <label for="inputDate" class="col-sm-2 col-form-label">Koniec</label>
+              <div class="col-md-8 col-sm-10 ml-4">
+                <input type="text" class="form-control" id="inputDate" placeholder="rrrr-mm-dd">
+              </div>
           </div>
         </div>   
       </fieldset>
@@ -161,7 +170,7 @@ Niestandardowy              </label>
 
         <div class="log-form col-lg-6">
           <table class="table">
-            <div class="row d-flex justify-content-center table-title table-income">PRZYCHODY</div>
+            <div class="row d-flex justify-content-center table-title table-income pt-2">PRZYCHODY</div>
             <div class="row ">
               <div class="empty mb-0 col-lg-12"></div>
             </div>
@@ -193,7 +202,7 @@ Niestandardowy              </label>
               <td>Inne</td>
               <td>...</td>
             </tr>
-            <tr>
+            <tr class="table-income">
               <th scope="row"></th>
               <td>SUMA</td>
               <td>...</td>
@@ -206,7 +215,7 @@ Niestandardowy              </label>
 
        <div class="log-form col-lg-6">
        <table class="table">
-        <div class="row d-flex justify-content-center table-title table-expense">WYDATKI</div>
+        <div class="row d-flex justify-content-center table-title table-expense pt-2">WYDATKI</div>
         <div class="row ">
           <div class="empty mb-0 col-lg-12"></div>
         </div>
@@ -238,7 +247,7 @@ Niestandardowy              </label>
           <td>Inne</td>
           <td>...</td>
         </tr>
-        <tr>
+        <tr class="table-expense">
           <th scope="row"></th>
           <td>SUMA</td>
           <td>...</td>
@@ -246,11 +255,44 @@ Niestandardowy              </label>
       </tbody>
     </table>
   </div>
-
-  <div class="row">
-    <div class="empty mb-4 col-lg-12"></div>
-  </div>
     </div>
+
+    <div class="row ">
+      <div class="empty mb-0 col-lg-12"></div>
+    </div>
+    <div class="log-form col-lg-6">
+    <table class="table">
+      <tbody>
+        <tr class="table-balance-total">
+          <th scope="row"></th>
+          <td>Bilans w wybranym okresie czasu wynosi: </td>
+          <td>...</td>
+        </tr>
+        </tbody>
+    </table>
+  </div>
+
+    <div class="row ">
+      <div class="empty col-lg-12"></div>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <div class="comment">
+        Uważaj, wpadasz w długi! / Gratulacje. Świetnie zarządzasz finansami!
+      </div>
+    </div>
+
+           <!-- Pie Chart  -->
+           <aside>
+            <div class="container-fluid">
+              <div class="row dotted">
+                <hr />
+              </div>
+            </div>
+          </aside>
+    <h1>Twoje wydatki z wybranego okresu</h1>
+    <div class="row d-flex justify-content-center">
+      <div class="piechart"></div>
+  </div>
       </section>
 </main>
 
