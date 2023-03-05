@@ -108,6 +108,35 @@ hr {
   margin-right: 15px;
 }
 
+.form-balance {
+  text-align: center;
+}
+
+/* ------------------Tables---------------------- */
+
+.table-balance {
+  font-size: 25px;
+  color: #212529;
+  background-color: #c39a51;
+  font-family: "Solitreo";
+  padding-top: 10px;
+  border-radius: 28px;
+  width: 30%;
+}
+
+.table-title {
+  font-size: 25px;
+  border-radius: 28px;
+}
+
+.table-income {
+  background-color: #4fdcb9;
+}
+
+.table-expense {
+  background-color: #e0bcb7;
+}
+
 /* ------------------Media Query---------------------- */
 
 @media (max-width: 900px) {
