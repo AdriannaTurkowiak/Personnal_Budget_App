@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>Dodaj wydatek</title>
@@ -49,305 +49,516 @@
 
   <body>
     <main>
-    <section class="colored-section" id="title">
+      <section class="colored-section" id="title">
+        <!-- Nav Bar -->
 
-    <!-- Nav Bar -->
-
-    <nav class="navbar navbar-dark navbar-expand-lg navbar-border navbar-style">
-      <a class="navbar-brand navbar-style" href="">Budżet domowy</a>
-      <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+        <nav
+          class="navbar navbar-dark navbar-expand-lg navbar-border navbar-style"
         >
-        <span class="" role="button" ><i class="fa fa-bars" aria-hidden="true" style="color:black"></i></span>
-      </button>      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link navbar-style" href="Zalogowany.html">Strona główna<span class="sr-only">(current)</span></a>
-        </li>
-    
-        </li>
-        <li class="nav-item">
-          <a class="nav-link navbar-style" href="Dodaj_przychód.html"
-            > Dodaj przychód</a
+          <a class="navbar-brand navbar-style" href="">Budżet domowy</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link navbar-style" href="Dodaj_wydatek.html"
-            >Dodaj wydatek</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link navbar-style" href="Przeglądaj_bilans.html"
-            >Przeglądaj bilans</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link navbar-style" href="Ustawienia.html"
-            >Ustawienia</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link navbar-style" href="index.html"
-            >Wyloguj się</a
-          >
-        </li>
-      </ul>
-      </div>
-    </nav>
+            <span class=""
+              ><i class="fa fa-bars" aria-hidden="true" style="color: black"></i
+            ></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link navbar-style" href="Zalogowany.html"
+                  >Strona główna<span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-style" href="Dodaj_przychód.html">
+                  Dodaj przychód</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-style" href="Dodaj_wydatek.html"
+                  >Dodaj wydatek</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-style" href="Przeglądaj_bilans.html"
+                  >Przeglądaj bilans</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-style" href="Ustawienia.html"
+                  >Ustawienia</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-style" href="index.html"
+                  >Wyloguj się</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
 
+        <!-- Title -->
 
-
-      <!-- Title -->
-
-    <div class="container-fluid">
-      <div class="row ">
-        <div class="empty mb-4 col-lg-12"></div>
-      </div>
-
-       <!-- Form  -->
-
-      <div class="row d-flex justify-content-center align-items-center">
-        <div class="log-form col-lg-6">
-          <form>
-            <div class="form-group row">
-              <label for="inputAmount" class="col-sm-2 col-form-label">Kwota</label>
-              <div class="col-md-8 col-sm-10">
-                <input type="text" class="form-control" id="inputAmount" placeholder="Wpisz kwotę w PLN">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="inputDate" class="col-sm-2 col-form-label">Data</label>
-              <div class="col-md-8 col-sm-10">
-                <input type="text" class="form-control" id="inputDate" placeholder="Wpisz datę w formacie  rrrr-mm-dd">
-              </div>
-            </div>
-            <fieldset class="form-group">
-              <div class="row">
-                <legend class="col-form-label col-sm-2 pt-0">Sposób płatności</legend>
-                <div class="col-md-8 col-sm-10">
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios1" value="option1" checked>
-                    <label class="form-check-label" for="gridRadios1">
-                      Gotówka
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios1" value="option2">
-                    <label class="form-check-label" for="gridRadios2">
-                      Karta debetowa
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios1" value="option3">
-                    <label class="form-check-label" for="gridRadios3">
-                      Karta kredytowa
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios1" value="option2">
-                    <label class="form-check-label" for="gridRadios4">
-                     BLIK
-                    </label>
-                  </div>
-                </div>
-              </div>   
-            </fieldset>
-
-            <fieldset class="form-group">
-              <div class="row">
-                <legend class="col-form-label col-sm-2 pt-0">Kategoria</legend>
-                <div class="col-md-8 col-sm-10">
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="option1" checked>
-                    <label class="form-check-label" for="gridRadios1">
-                      Jedzenie
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="option2">
-                    <label class="form-check-label" for="gridRadios2">
-                      Mieszkanie
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="option3">
-                    <label class="form-check-label" for="gridRadios3">
-                      Transport
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="option2">
-                    <label class="form-check-label" for="gridRadios4">
-                      Telekomunikacja
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="option2">
-                    <label class="form-check-label" for="gridRadios5">
-                      Opieka zdrowotna
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="option2">
-                    <label class="form-check-label" for="gridRadios6">
-                      Ubranie
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="option2">
-                    <label class="form-check-label" for="gridRadios7">
-                      Higiena
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="option2">
-                    <label class="form-check-label" for="gridRadios8">
-                      Dzieci
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="option2">
-                    <label class="form-check-label" for="gridRadios9">
-                      Rozrywka
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="option2">
-                    <label class="form-check-label" for="gridRadios10">
-                      Wycieczka
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="option2">
-                    <label class="form-check-label" for="gridRadios11">
-                      Szkolenia
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="option2">
-                    <label class="form-check-label" for="gridRadios12">
-                      Książki
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="option2">
-                    <label class="form-check-label" for="gridRadios13">
-                      Oszczędności
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="option2">
-                    <label class="form-check-label" for="gridRadios14">
-                      Na złotą jesień, czyli emeryturę
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="option2">
-                    <label class="form-check-label" for="gridRadios15">
-                      Spłata długów
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="option2">
-                    <label class="form-check-label" for="gridRadios16">
-                      Darowizna
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="option2">
-                    <label class="form-check-label" for="gridRadios17">
-                      Inne wydatki
-                    </label>
-                  </div>
-                </div>
-              </div>   
-            </fieldset>
-
-            <div class="form-group row">
-              <label for="validationTextarea" class="col-sm-2 col-form-label text-left">Komentarz (opcjonalnie)</label>
-              <div class="col-md-8 col-sm-10">
-                <textarea class="form-control" id="validationTextarea"></textarea>
-              </div>
-            </div>
-            <div class="row d-flex justify-content-center">
-              <a href ="" role="button" class="btn btn-dark btn-lg signin-button income-btn mr-4 ml-2">
-                <i class="fa-solid fa-plus"></i> Dodaj 
-              </a>
-              <a href ="" role="button" class="btn btn-outline-light btn-lg login-button income-btn ml-4">
-                <i class="fa-solid fa-minus"></i> Anuluj 
-              </a>
-            </div>
-          </form>
-          
-       <!-- Image  -->
-
-    </div> 
-    <div class="image col-lg-6">
-      <img
-        class="title-image "
-        src="images/Title image.png"
-        alt="Title image"
-      />
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="empty mb-4 col-lg-12"></div>
-  </div>
-    </div>
-      </section>
-</main>
-
-  <!-- Quote -->
-
-<aside>
-  <div class="container-fluid">
-    <div class="row dotted">
-      <hr />
-    </div>
-  </div>
-</aside>
-
-<aside>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="icon col-lg-4">
-        <img
-          class="quote-icon "
-          src="images/Budzet_ikona.png"
-          alt="Budget icon"
-        />
-      </div>
-<div class="quote col-lg-6">
-  „Pieniądze szczęścia nie dają, dopiero zakupy” – Marilyn Monroe
-</div>
-    </div>
-     </div>
-      </aside>
-      <aside>
         <div class="container-fluid">
-          <div class="row dotted">
-            <hr />
+          <div class="row">
+            <div class="empty mb-4 col-lg-12"></div>
+          </div>
+
+          <!-- Form  -->
+
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="log-form col-lg-6">
+              <form>
+                <div class="form-group row">
+                  <label for="inputAmount" class="col-sm-2 col-form-label"
+                    >Kwota</label
+                  >
+                  <div class="col-md-8 col-sm-10">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputAmount"
+                      placeholder="Wpisz kwotę w PLN"
+                    />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputDate" class="col-sm-2 col-form-label"
+                    >Data</label
+                  >
+                  <div class="col-md-8 col-sm-10">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputDate"
+                      placeholder="Wpisz datę w formacie  rrrr-mm-dd"
+                    />
+                  </div>
+                </div>
+                <fieldset class="form-group">
+                  <div class="row">
+                    <label class="col-form-label col-sm-2 pt-0">
+                      Sposób płatności
+                    </label>
+                    <div class="col-md-8 col-sm-10">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="payment_method"
+                          id="payment_method_1"
+                          value="cash"
+                          checked
+                        />
+                        <label class="form-check-label" for="payment_method_1">
+                          Gotówka
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="payment_method"
+                          id="payment_method_2"
+                          value="debit_card"
+                        />
+                        <label class="form-check-label" for="payment_method_2">
+                          Karta debetowa
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="payment_method"
+                          id="payment_method_3"
+                          value="credit_card"
+                        />
+                        <label class="form-check-label" for="payment_method_3">
+                          Karta kredytowa
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="payment_method"
+                          id="payment_method_4"
+                          value="BLIK"
+                        />
+                        <label class="form-check-label" for="payment_method_4">
+                          BLIK
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="form-group">
+                  <div class="row">
+                    <label class="col-form-label col-sm-2 pt-0">
+                      Kategoria
+                    </label>
+                    <div class="col-md-8 col-sm-10">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="expense_category"
+                          id="expense_category_1"
+                          value="food"
+                          checked
+                        />
+                        <label
+                          class="form-check-label"
+                          for="expense_category_1"
+                        >
+                          Jedzenie
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="expense_category"
+                          id="expense_category_2"
+                          value="flat"
+                        />
+                        <label
+                          class="form-check-label"
+                          for="expense_category_2"
+                        >
+                          Mieszkanie
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="expense_category"
+                          id="expense_category_3"
+                          value="transportation"
+                        />
+                        <label
+                          class="form-check-label"
+                          for="expense_category_3"
+                        >
+                          Transport
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="expense_category"
+                          id="expense_category_4"
+                          value="telecomunication"
+                        />
+                        <label
+                          class="form-check-label"
+                          for="expense_category_4"
+                        >
+                          Telekomunikacja
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="expense_category"
+                          id="expense_category_5"
+                          value="healthcare"
+                        />
+                        <label
+                          class="form-check-label"
+                          for="expense_category_5"
+                        >
+                          Opieka zdrowotna
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="expense_category"
+                          id="expense_category_6"
+                          value="clothes"
+                        />
+                        <label
+                          class="form-check-label"
+                          for="expense_category_6"
+                        >
+                          Ubranie
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="expense_category"
+                          id="expense_category_7"
+                          value="hygiene"
+                        />
+                        <label
+                          class="form-check-label"
+                          for="expense_category_7"
+                        >
+                          Higiena
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="expense_category"
+                          id="expense_category_8"
+                          value="kids"
+                        />
+                        <label
+                          class="form-check-label"
+                          for="expense_category_8"
+                        >
+                          Dzieci
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="expense_category"
+                          id="expense_category_9"
+                          value="entertainment"
+                        />
+                        <label
+                          class="form-check-label"
+                          for="expense_category_9"
+                        >
+                          Rozrywka
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="expense_category"
+                          id="expense_category_10"
+                          value="travel"
+                        />
+                        <label
+                          class="form-check-label"
+                          for="expense_category_10"
+                        >
+                          Wycieczka
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="expense_category"
+                          id="expense_category_11"
+                          value="training"
+                        />
+                        <label
+                          class="form-check-label"
+                          for="expense_category_11"
+                        >
+                          Szkolenia
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="expense_category"
+                          id="expense_category_12"
+                          value="books"
+                        />
+                        <label
+                          class="form-check-label"
+                          for="expense_category_12"
+                        >
+                          Książki
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="expense_category"
+                          id="expense_category_13"
+                          value="savings"
+                        />
+                        <label
+                          class="form-check-label"
+                          for="expense_category_13"
+                        >
+                          Oszczędności
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="expense_category"
+                          id="expense_category_14"
+                          value="retire"
+                        />
+                        <label
+                          class="form-check-label"
+                          for="expense_category_14"
+                        >
+                          Na złotą jesień, czyli emeryturę
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="expense_category"
+                          id="expense_category_15"
+                          value="debt"
+                        />
+                        <label
+                          class="form-check-label"
+                          for="expense_category_15"
+                        >
+                          Spłata długów
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="expense_category"
+                          id="expense_category_16"
+                          value="donation"
+                        />
+                        <label
+                          class="form-check-label"
+                          for="expense_category_16"
+                        >
+                          Darowizna
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="expense_category"
+                          id="expense_category_17"
+                          value="others"
+                        />
+                        <label
+                          class="form-check-label"
+                          for="expense_category_17"
+                        >
+                          Inne wydatki
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <div class="form-group row">
+                  <label
+                    for="validationTextarea"
+                    class="col-sm-2 col-form-label text-left"
+                    >Komentarz (opcjonalnie)</label
+                  >
+                  <div class="col-md-8 col-sm-10">
+                    <textarea
+                      class="form-control"
+                      id="validationTextarea"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                  <a
+                    href=""
+                    role="button"
+                    class="btn btn-dark btn-lg signin-button income-btn mr-4 ml-2"
+                  >
+                    <i class="fa-solid fa-plus"></i> Dodaj
+                  </a>
+                  <a
+                    href=""
+                    role="button"
+                    class="btn btn-outline-light btn-lg login-button income-btn ml-4"
+                  >
+                    <i class="fa-solid fa-minus"></i> Anuluj
+                  </a>
+                </div>
+              </form>
+
+              <!-- Image  -->
+            </div>
+            <div class="image col-lg-6">
+              <img
+                class="title-image"
+                src="images/Title_image.png"
+                alt="Title image"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="empty mb-4 col-lg-12"></div>
           </div>
         </div>
-      </aside>
-  
-      <!-- Footer -->
-  
-      <footer class="colored-section" id="footer">
-        <div class="container-fluid">
-          <div class="d-flex justify-content-center">
+      </section>
+    </main>
+
+    <!-- Quote -->
+
+    <aside>
+      <div class="container-fluid">
+        <div class="row dotted">
+          <hr />
+        </div>
+      </div>
+    </aside>
+
+    <aside>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="icon col-lg-4">
+            <img
+              class="quote-icon"
+              src="images/Budzet_ikona.png"
+              alt="Budget icon"
+            />
+          </div>
+          <div class="quote col-lg-6">
+            „Pieniądze szczęścia nie dają, dopiero zakupy” – Marilyn Monroe
+          </div>
+        </div>
+      </div>
+    </aside>
+    <aside>
+      <div class="container-fluid">
+        <div class="row dotted">
+          <hr />
+        </div>
+      </div>
+    </aside>
+
+    <!-- Footer -->
+
+    <footer class="colored-section" id="footer">
+      <div class="container-fluid">
+        <div class="d-flex justify-content-center">
           <p class="copyright">© Copyright Adrianna Turkowiak</p>
         </div>
       </div>
-      </footer>
-    </body>
-  </html>
-  
+    </footer>
+  </body>
+</html>

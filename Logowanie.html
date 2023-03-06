@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>Logowanie</title>
@@ -49,13 +49,14 @@
 
   <body>
     <main>
-    <section class="colored-section" id="title">
+      <section class="colored-section" id="title">
+        <!-- Nav Bar -->
 
-    <!-- Nav Bar -->
-
-      <nav class="navbar navbar-dark navbar-expand-lg navbar-border navbar-style">
-        <a class="navbar-brand navbar-style" href="">Budżet domowy</a>
-        <button
+        <nav
+          class="navbar navbar-dark navbar-expand-lg navbar-border navbar-style"
+        >
+          <a class="navbar-brand navbar-style" href="">Budżet domowy</a>
+          <button
             class="navbar-toggler"
             type="button"
             data-toggle="collapse"
@@ -64,128 +65,146 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-          <span class="" role="button" ><i class="fa fa-bars" aria-hidden="true" style="color:black"></i></span>
-        </button>      
+            <span class=""
+              ><i class="fa fa-bars" aria-hidden="true" style="color: black"></i
+            ></span>
+          </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link navbar-style" href="index.html">Strona główna<span class="sr-only">(current)</span></a>
-          </li>
-      
-          </li>
-          <li class="nav-item">
-            <a class="nav-link navbar-style" href="Logowanie.html"
-              > Logowanie</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link navbar-style" href="Rejestracja.html"
-              >Rejestracja</a
-            >
-          </li>
-        </ul>
-        </div>
-      </nav>
-
-
-      <!-- Title -->
-
-    <div class="container-fluid">
-      <div class="row ">
-        <div class="empty mb-4 col-lg-12"></div>
-      </div>
-      
-            <!-- Form -->
-
-      <div class="row d-flex justify-content-center align-items-center">
-        <div class="log-form col-lg-6">
-          <form>
-            <div class="form-group input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
-                </div>
-                <input for="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link navbar-style" href="index.html"
+                  >Strona główna<span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-style" href="Logowanie.html">
+                  Logowanie</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-style" href="Rejestracja.html"
+                  >Rejestracja</a
+                >
+              </li>
+            </ul>
           </div>
-            <div class="form-group input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+        </nav>
+
+        <!-- Title -->
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="empty mb-4 col-lg-12"></div>
+          </div>
+
+          <!-- Form -->
+
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="log-form col-lg-6">
+              <form>
+                <div class="form-group input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"
+                      ><i class="fa-solid fa-envelope"></i
+                    ></span>
+                  </div>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="description"
+                    placeholder="Email"
+                  />
+                  <div id="description"></div>
                 </div>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Hasło">
+                <div class="form-group input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"
+                      ><i class="fa-solid fa-lock"></i
+                    ></span>
+                  </div>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                    placeholder="Hasło"
+                  />
+                </div>
+
+                <div class="row d-flex justify-content-center">
+                  <a
+                    href="Zalogowany.html"
+                    role="button"
+                    class="btn btn-dark btn-lg signin-button"
+                  >
+                    <i class="fa-solid fa-lock"></i> Zaloguj
+                  </a>
+                </div>
+              </form>
             </div>
-            
-            <div class="row d-flex justify-content-center ">
-              <a href ="Zalogowany.html" role="button" 
-                class="btn btn-dark btn-lg signin-button"
-              >
-                <i class="fa-solid fa-lock"></i> Zaloguj
-            </a>
-            </div>          
-          </form>
-    </div> 
 
-          <!-- Image -->
+            <!-- Image -->
 
-    <div class="image col-lg-6">
-      <img
-        class="title-image "
-        src="images/Title image.png"
-        alt="Title image"
-      />
-    </div>
-  </div>
+            <div class="image col-lg-6">
+              <img
+                class="title-image"
+                src="images/Title_image.png"
+                alt="Title image"
+              />
+            </div>
+          </div>
 
-  <div class="row">
-    <div class="empty mb-4 col-lg-12"></div>
-  </div>
-    </div>
-      </section>
-</main>
-
-  <!-- Quote -->
-
-<aside>
-  <div class="container-fluid">
-    <div class="row dotted">
-      <hr />
-    </div>
-  </div>
-</aside>
-
-<aside>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="icon col-lg-4">
-        <img
-          class="quote-icon "
-          src="images/Budzet_ikona.png"
-          alt="Budget icon"
-        />
-      </div>
-<div class="quote col-lg-6">
-        „Mało, często powtarzane, stanowi wiele. Strzeżcie się drobnych wydatków
-        – dosyć jest dla wody małego otworu, by wielki zatopiła okręt” –
-        Benjamin Franklin.
-      </div>
-    </div>
-     </div>
-      </aside>
-      <aside>
-        <div class="container-fluid">
-          <div class="row dotted">
-            <hr />
+          <div class="row">
+            <div class="empty mb-4 col-lg-12"></div>
           </div>
         </div>
-      </aside>
-  
-      <!-- Footer -->
-  
-      <footer class="colored-section" id="footer">
-        <div class="container-fluid">
-          <div class="d-flex justify-content-center">
+      </section>
+    </main>
+
+    <!-- Quote -->
+
+    <aside>
+      <div class="container-fluid">
+        <div class="row dotted">
+          <hr />
+        </div>
+      </div>
+    </aside>
+
+    <aside>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="icon col-lg-4">
+            <img
+              class="quote-icon"
+              src="images/Budzet_ikona.png"
+              alt="Budget icon"
+            />
+          </div>
+          <div class="quote col-lg-6">
+            „Mało, często powtarzane, stanowi wiele. Strzeżcie się drobnych
+            wydatków – dosyć jest dla wody małego otworu, by wielki zatopiła
+            okręt” – Benjamin Franklin.
+          </div>
+        </div>
+      </div>
+    </aside>
+    <aside>
+      <div class="container-fluid">
+        <div class="row dotted">
+          <hr />
+        </div>
+      </div>
+    </aside>
+
+    <!-- Footer -->
+
+    <footer class="colored-section" id="footer">
+      <div class="container-fluid">
+        <div class="d-flex justify-content-center">
           <p class="copyright">© Copyright Adrianna Turkowiak</p>
         </div>
       </div>
-      </footer>
-    </body>
-  </html>
-  
+    </footer>
+  </body>
+</html>

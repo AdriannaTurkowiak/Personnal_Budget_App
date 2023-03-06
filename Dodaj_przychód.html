@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>Dodaj przychód</title>
@@ -49,194 +49,249 @@
 
   <body>
     <main>
-    <section class="colored-section" id="title">
+      <section class="colored-section" id="title">
+        <!-- Nav Bar -->
 
-    <!-- Nav Bar -->
-
-    <nav class="navbar navbar-dark navbar-expand-lg navbar-border navbar-style">
-      <a class="navbar-brand navbar-style" href="">Budżet domowy</a>
-      <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+        <nav
+          class="navbar navbar-dark navbar-expand-lg navbar-border navbar-style"
         >
-        <span class="" role="button" ><i class="fa fa-bars" aria-hidden="true" style="color:black"></i></span>
-      </button>      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link navbar-style" href="Zalogowany.html">Strona główna<span class="sr-only">(current)</span></a>
-        </li>
-    
-        </li>
-        <li class="nav-item">
-          <a class="nav-link navbar-style" href="Dodaj_przychód.html"
-            > Dodaj przychód</a
+          <a class="navbar-brand navbar-style" href="">Budżet domowy</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link navbar-style" href="Dodaj_wydatek.html"
-            >Dodaj wydatek</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link navbar-style" href="Przeglądaj_bilans.html"
-            >Przeglądaj bilans</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link navbar-style" href="Ustawienia.html"
-            >Ustawienia</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link navbar-style" href="index.html"
-            >Wyloguj się</a
-          >
-        </li>
-      </ul>
-      </div>
-    </nav>
+            <span class=""
+              ><i class="fa fa-bars" aria-hidden="true" style="color: black"></i
+            ></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link navbar-style" href="Zalogowany.html"
+                  >Strona główna<span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-style" href="Dodaj_przychód.html">
+                  Dodaj przychód</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-style" href="Dodaj_wydatek.html"
+                  >Dodaj wydatek</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-style" href="Przeglądaj_bilans.html"
+                  >Przeglądaj bilans</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-style" href="Ustawienia.html"
+                  >Ustawienia</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-style" href="index.html"
+                  >Wyloguj się</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
 
+        <!-- Title -->
 
+        <div class="container-fluid">
+          <div class="row">
+            <div class="empty mb-4 col-lg-12"></div>
+          </div>
+          <!-- Form  -->
 
-      <!-- Title -->
-
-    <div class="container-fluid">
-      <div class="row ">
-        <div class="empty mb-4 col-lg-12"></div>
-      </div>
-             <!-- Form  -->
-
-      <div class="row d-flex justify-content-center align-items-center">
-        <div class="log-form col-lg-6">
-          <form>
-            <div class="form-group row">
-              <label for="inputAmount" class="col-sm-2 col-form-label">Kwota</label>
-              <div class="col-md-8 col-sm-10">
-                <input type="text" class="form-control" id="inputAmount" placeholder="Wpisz kwotę w PLN">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="inputDate" class="col-sm-2 col-form-label">Data</label>
-              <div class="col-md-8 col-sm-10">
-                <input type="text" class="form-control" id="inputDate" placeholder="Wpisz datę w formacie  rrrr-mm-dd">
-              </div>
-            </div>
-            <fieldset class="form-group">
-              <div class="row">
-                <legend class="col-form-label col-sm-2 pt-0">Kategoria przychodu</legend>
-                <div class="col-md-8 col-sm-10">
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                    <label class="form-check-label" for="gridRadios1">
-                      Wynagrodzenie
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                    <label class="form-check-label" for="gridRadios2">
-                     Odsetki bankowe
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
-                    <label class="form-check-label" for="gridRadios3">
-                      Sprzedaż na Allegro
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                    <label class="form-check-label" for="gridRadios2">
-                     Inne przychody
-                    </label>
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="log-form col-lg-6">
+              <form>
+                <div class="form-group row">
+                  <label for="inputAmount" class="col-sm-2 col-form-label"
+                    >Kwota</label
+                  >
+                  <div class="col-md-8 col-sm-10">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputAmount"
+                      placeholder="Wpisz kwotę w PLN"
+                    />
                   </div>
                 </div>
-              </div>   
-            </fieldset>
-            <div class="form-group row">
-              <label for="validationTextarea" class="col-sm-2 col-form-label text-left">Komentarz (opcjonalnie)</label>
-              <div class="col-md-8 col-sm-10">
-                <textarea class="form-control" id="validationTextarea"></textarea>
-              </div>
+                <div class="form-group row">
+                  <label for="inputDate" class="col-sm-2 col-form-label"
+                    >Data</label
+                  >
+                  <div class="col-md-8 col-sm-10">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputDate"
+                      placeholder="Wpisz datę w formacie  rrrr-mm-dd"
+                    />
+                  </div>
+                </div>
+                <fieldset class="form-group">
+                  <div class="row">
+                    <label class="col-form-label col-sm-2 pt-0">
+                      Kategoria przychodu
+                    </label>
+                    <div class="col-md-8 col-sm-10">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="income_category"
+                          id="income_category_1"
+                          value="payment"
+                          checked
+                        />
+                        <label class="form-check-label" for="income_category_1">
+                          Wynagrodzenie
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="income_category"
+                          id="income_category_2"
+                          value="bank_interests"
+                        />
+                        <label class="form-check-label" for="income_category_2">
+                          Odsetki bankowe
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="income_category"
+                          id="income_category_3"
+                          value="sales_on_Allegro"
+                        />
+                        <label class="form-check-label" for="income_category_3">
+                          Sprzedaż na Allegro
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="income_category"
+                          id="income_category_4"
+                          value="other"
+                        />
+                        <label class="form-check-label" for="income_category_4">
+                          Inne przychody
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+                <div class="form-group row">
+                  <label
+                    for="validationTextarea"
+                    class="col-sm-2 col-form-label text-left"
+                    >Komentarz (opcjonalnie)</label
+                  >
+                  <div class="col-md-8 col-sm-10">
+                    <textarea
+                      class="form-control"
+                      id="validationTextarea"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                  <a
+                    href=""
+                    role="button"
+                    class="btn btn-dark btn-lg signin-button income-btn mr-4 ml-2"
+                  >
+                    <i class="fa-solid fa-plus"></i> Dodaj
+                  </a>
+                  <a
+                    href=""
+                    role="button"
+                    class="btn btn-outline-light btn-lg login-button income-btn ml-4"
+                  >
+                    <i class="fa-solid fa-minus"></i> Anuluj
+                  </a>
+                </div>
+              </form>
+
+              <!-- Image  -->
             </div>
-            <div class="row d-flex justify-content-center">
-              <a href ="" role="button" class="btn btn-dark btn-lg signin-button income-btn mr-4 ml-2">
-                <i class="fa-solid fa-plus"></i> Dodaj 
-              </a>
-              <a href ="" role="button" class="btn btn-outline-light btn-lg login-button income-btn ml-4">
-                <i class="fa-solid fa-minus"></i> Anuluj 
-              </a>
+            <div class="image col-lg-6">
+              <img
+                class="title-image"
+                src="images/Title_image.png"
+                alt="Title image"
+              />
             </div>
-          </form>
-          
-       <!-- Image  -->
+          </div>
 
-
-    </div> 
-    <div class="image col-lg-6">
-      <img
-        class="title-image "
-        src="images/Title image.png"
-        alt="Title image"
-      />
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="empty mb-4 col-lg-12"></div>
-  </div>
-    </div>
-      </section>
-</main>
-
-  <!-- Quote -->
-
-<aside>
-  <div class="container-fluid">
-    <div class="row dotted">
-      <hr />
-    </div>
-  </div>
-</aside>
-
-<aside>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="icon col-lg-4">
-        <img
-          class="quote-icon "
-          src="images/Budzet_ikona.png"
-          alt="Budget icon"
-        />
-      </div>
-<div class="quote col-lg-6">
-  „Czas jest wartościowszy od pieniędzy. Możesz dostać więcej pieniędzy, ale nie możesz dostać więcej czasu” – Jim Rohn
-      </div>
-    </div>
-     </div>
-      </aside>
-      <aside>
-        <div class="container-fluid">
-          <div class="row dotted">
-            <hr />
+          <div class="row">
+            <div class="empty mb-4 col-lg-12"></div>
           </div>
         </div>
-      </aside>
-  
-      <!-- Footer -->
-  
-      <footer class="colored-section" id="footer">
-        <div class="container-fluid">
-          <div class="d-flex justify-content-center">
+      </section>
+    </main>
+
+    <!-- Quote -->
+
+    <aside>
+      <div class="container-fluid">
+        <div class="row dotted">
+          <hr />
+        </div>
+      </div>
+    </aside>
+
+    <aside>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="icon col-lg-4">
+            <img
+              class="quote-icon"
+              src="images/Budzet_ikona.png"
+              alt="Budget icon"
+            />
+          </div>
+          <div class="quote col-lg-6">
+            „Czas jest wartościowszy od pieniędzy. Możesz dostać więcej
+            pieniędzy, ale nie możesz dostać więcej czasu” – Jim Rohn
+          </div>
+        </div>
+      </div>
+    </aside>
+    <aside>
+      <div class="container-fluid">
+        <div class="row dotted">
+          <hr />
+        </div>
+      </div>
+    </aside>
+
+    <!-- Footer -->
+
+    <footer class="colored-section" id="footer">
+      <div class="container-fluid">
+        <div class="d-flex justify-content-center">
           <p class="copyright">© Copyright Adrianna Turkowiak</p>
         </div>
       </div>
-      </footer>
-    </body>
-  </html>
-  
+    </footer>
+  </body>
+</html>
